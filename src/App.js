@@ -11,9 +11,9 @@ function App() {
     <>
       <GlobalStyle />
       <Switch>
-        <Route path="/" exact component={ HomePage } />
-        <Route path="/game" component={ GamePage } />
-        <Route path="/feedback" component={ Feedback } />
+        <Route path="/trivia-hooks" exact component={ HomePage } />
+        <Route path="/trivia-hooks/game" component={ GamePage } />
+        <Route path="/trivia-hooks/feedback" component={ Feedback } />
       </Switch>
     </>
   );
