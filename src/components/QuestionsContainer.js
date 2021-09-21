@@ -19,8 +19,6 @@ export default function QuestionsContainer() {
   });
   const answersRef = useRef(null);
 
-  console.log(questions)
-
   const renderCategory = useCallback(() => {
     setCategoryRendered(false);
     revealPlay();

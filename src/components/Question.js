@@ -33,7 +33,6 @@ export default function Question({
 
   // Update current player in storage
   useEffect(() => {
-    console.log('aqyu');
     const gameHistory = JSON.parse(localStorage.getItem('gameHistory'));
     let player;
 
