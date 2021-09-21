@@ -7,7 +7,7 @@ import TriviaProvider from './provider/TriviaProvider';
 
 ReactDOM.render(
     <React.StrictMode>
-      <Router basename ="/trivia-hooks">
+      <Router>
         <TriviaProvider>
           <App />
         </TriviaProvider>
