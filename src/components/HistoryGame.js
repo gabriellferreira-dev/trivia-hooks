@@ -15,7 +15,7 @@ export default function HistoryGame({
     setHistory(gameHistory);
   }, []);
 
-  if (!history.length) {
+  if (!history) {
     return <p>Carregando...</p>;
   }
 
