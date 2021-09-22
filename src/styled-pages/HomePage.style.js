@@ -19,6 +19,11 @@ const HomePage = styled.section`
     padding: 50px 0;
     color: #f3f3f3;
 
+    & p {
+      text-align: center;
+      margin: 15px 0;
+    }
+
     & > div {
       width: 100%;
       height: 100%;

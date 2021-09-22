@@ -34,7 +34,8 @@ const useStyles = makeStyles({
 });
 
 export default function QuestionInput({ redirectNextScreen, setMounted }) {
-  const { playerData, setPlayerData, quantity, setQuantity } = useContext(GlobalContext);
+  const { playerData, setPlayerData, quantity, setQuantity } =
+    useContext(GlobalContext);
   const classes = useStyles();
 
   const handleChange = ({ target: { value, name } }) => {
@@ -59,7 +60,7 @@ export default function QuestionInput({ redirectNextScreen, setMounted }) {
         variant='outlined'
         className={classes.root}
         onChange={handleChange}
-        autoFocus={true}
+        required
         onBlur={() => redirectNextScreen(true)}
       />
       <p>Selecione a quantidade de perguntas</p>

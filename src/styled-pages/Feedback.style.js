@@ -63,8 +63,8 @@ export const StyledFeedback = styled.section`
     }
   }
   & div:nth-child(2) {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
+    & button {
+      margin: 10px;
+    }
   }
 `;

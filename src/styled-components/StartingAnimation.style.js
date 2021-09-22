@@ -33,6 +33,7 @@ export const StartingAnimation = styled.div`
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     transition: all 1s linear;
+    text-align: center;
 
     animation: ${animation} 5s linear infinite;
   }

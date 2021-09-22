@@ -36,7 +36,7 @@ export default function HomePage() {
   useEffect(() => {
     redirectNextScreen(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [playerData.name, quantity]);
+  }, [quantity]);
 
   useEffect(() => {
     const gameHistory = JSON.parse(localStorage.getItem('gameHistory'));
@@ -62,7 +62,7 @@ export default function HomePage() {
           </IconButton>
         </div>
       )}
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         {nextScreen ? (
           <StartGameScreen
             setMounted={setMounted}

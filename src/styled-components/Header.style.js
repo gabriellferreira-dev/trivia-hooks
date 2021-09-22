@@ -5,14 +5,24 @@ export const StyledHeader = styled.header`
   height: 100px;
   background-color: rgba(0, 1, 25, 0.95);
 
-  & div {
+  & > div {
     color: #f3f3f3;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    width: 90%;
+    width: calc(100% - 120px);
     min-width: 300px;
+
+    & > p:nth-child(1) {
+      display: flex;
+      align-items: center;
+      
+      svg {
+        font-size: 3rem;
+        margin: 0 5px;
+      }
+    }
 
     & div {
       display: flex;

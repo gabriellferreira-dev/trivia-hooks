@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledQuestionsContainer = styled.div`
-  width: 60%;
+  width: 60vw;
   height: 70vh;
   color: #dedfee;
   position: relative;
@@ -12,6 +12,11 @@ export const StyledQuestionsContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.05);
   overflow: hidden;
   padding: 10px;
+
+  @media(max-width: 800px) {
+    width: 80vw;
+    height: 60vh;
+  }
 
   & > p {
     font-size: 2rem;

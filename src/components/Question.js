@@ -87,6 +87,8 @@ export default function Question({
         setTimeLeft(timeLeft - 1);
       }, 1000);
 
+      if (isAnswered) clearInterval(interval);
+
       return () => clearInterval(interval);
     } else {
       setAnsweredCallback();
@@ -95,7 +97,7 @@ export default function Question({
       wrongAnswerPlay();
       setScore({ ...scoreboard, wrong: scoreboard.wrong + 1 });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     addAnswer,
     setAnsweredCallback,

@@ -36,6 +36,7 @@ export default function Feedback() {
     quantity,
     setNewGame,
     isNewGame,
+    setQuantity,
   } = useContext(GlobalContext);
   const [openModal, setOpenModal] = useState(false);
   const [playDrumsEffect] = useSound(drumsAppearEffect, { volume: 1 });
@@ -55,6 +56,7 @@ export default function Feedback() {
   }, [playDrumsEffect]);
 
   const newGame = () => {
+    setQuantity(null);
     setNewGame(true);
   };
 

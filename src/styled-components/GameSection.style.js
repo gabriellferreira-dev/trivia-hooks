@@ -8,6 +8,7 @@ export const GameSection = styled.section`
   justify-content: space-evenly;
   position: relative;
   background-color: #000119;
+  max-width: 1580px;
 
   & > button {
     position: absolute;

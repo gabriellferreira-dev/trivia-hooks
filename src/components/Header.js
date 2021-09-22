@@ -3,6 +3,7 @@ import { GlobalContext } from '../context/GlobalContext';
 import { StyledHeader } from '../styled-components/Header.style';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import PersonIcon from '@mui/icons-material/Person';
 
 export default function Header() {
   const {
@@ -13,7 +14,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <div>
-        <p>{`PLAYER: ${name.toUpperCase()}`}</p>
+        <p><PersonIcon /><span>{name.toUpperCase()}</span></p>
         <div>
           <p>
             <CheckIcon /><span>{right}</span>
